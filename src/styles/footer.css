@@ -21,10 +21,50 @@
     cursor: pointer;
 }
 
+.footer__info {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    width: 100%;
+    height: 100%;
+}
+
+.footer__adress{
+    font-size: 4rem;
+    padding: 4rem;
+    font-family: 'Sacramento', cursive;
+}
+
+.footer__phone{font-size: 2rem;}
+
+.footer__media {
+    font-size: 3rem;
+    gap: 2rem;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    margin: 2rem;
+}
+
+.footer__media--item:hover {
+    color: white;
+    cursor: pointer;
+    transition: 0.5s ease-in;
+}
+
+hr 
+{
+    width:60%;
+    background-color: black;
+}
 @media (min-width: 768px){
     .footer__wrapper
     {
         border-top-right-radius: 20%;
     }
-
+    .footer__info {
+        flex-direction: rows;
+    }
 }
