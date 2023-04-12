@@ -1,13 +1,13 @@
 import './App.css'
 import { useState, useEffect } from 'react';
-import Header from './components/Header'
-import Offert from './components/Offert'
-import Footer from './components/Footer'
 import Loading from './components/Loading'
+import Home from './pages/Home'
+import Treatments from './pages/Treatments'
+import { Routes, Route } from 'react-router-dom';
+
 
 function App() {
   const [loading, setLoading] = useState(true);
-  const load = document.querySelector('.loading')
 
   useEffect(() => {
     setTimeout(() => {
@@ -21,12 +21,13 @@ function App() {
       {loading ?
         <Loading />
         :
-        <>
-          <Header />
-          <Offert />
-          <Footer />
-        </>
-      }
+      <Routes>
+          <Route path="/" element={<Home />}>
+          </Route>
+          <Route path="/treatments" element={<Treatments />}>
+          </Route>
+        </Routes>
+}
     </div>
   )
 }

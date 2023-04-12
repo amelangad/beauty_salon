@@ -12,7 +12,7 @@ const scrollUp = () => {
 }
 
   return (
-    <div className ="footer__wrapper">
+    <div className ="footer__wrapper" name="contact">
 <button className ="footer__button"
 onClick={scrollUp}>UP</button>
 <div className ="footer__info">
