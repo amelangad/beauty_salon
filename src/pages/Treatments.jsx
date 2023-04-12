@@ -2,7 +2,7 @@ import React from 'react'
 import Nav from '../components/Nav'
 import Footer from '../components/Footer'
 import '../styles/treatments.css'
-import polish from '../assets/polish.jpg'
+import face from '../assets/face.jpg'
 import nails from '../assets/nails.jpg'
 import hair from '../assets/hair.jpg'
 import massage from '../assets/massage.jpg'
@@ -19,7 +19,7 @@ export default function Treatments() {
 const Treatments = [
     {
       id: "1",
-      src: polish,
+      src: face,
       title: "Face treatment",
       text: "Lorem Ipsum jest tekstem stosowanym jako przykładowy wypełniacz w przemyśle poligraficznym. Został po raz pierwszy użyty w XV w. przez nieznanego drukarza do wypełnienia tekstem próbnej książki. Pięć wieków później zaczął być używany przemyśle elektronicznym, pozostając praktycznie niezmienionym. Spopularyzował się w latach 60. XX w. wraz z publikacją arkuszy Letrasetu, zawierających fragmenty Lorem Ipsum, a ostatnio z zawierającym różne wersje Lorem Ipsum oprogramowaniem przeznaczonym do realizacji druków na komputerach osobistych, jak Aldus PageMaker",
     },
