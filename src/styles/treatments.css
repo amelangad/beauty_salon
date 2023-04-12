@@ -42,13 +42,13 @@
     cursor: pointer;
     display: flex;
     justify-content: center;
-    align-items: center;
-    overflow: hidden;
+
 }
 
 .treatments__image {
     object-fit: cover;
     width: 100%;
+    height: 100%;
     border-radius: inherit;
     transition: .5s ease-in-out;
     opacity: .5;
@@ -69,7 +69,7 @@
 
 
 .treatments__text {
-    font-family: font-family: 'Sacramento', cursive;
+    font-family: 'Roboto', sans-serif;
     width: 80%;
     height: auto;
     padding: .5rem 0;
@@ -112,7 +112,7 @@
         width: 40%;
         padding: 1rem 5rem;
         margin: 0 auto;
-        font-size: 1.5rem;
+        font-size: 1.4rem;
 
     }
 
