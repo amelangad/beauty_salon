@@ -33,7 +33,7 @@
 }
 
 .footer__adress{
-    font-size: 4rem;
+    font-size: 2rem;
     padding: 4rem;
     font-family: 'Sacramento', cursive;
 }
@@ -65,6 +65,9 @@ hr
     .footer__wrapper
     {
         border-top-right-radius: 20%;
+    }
+    .footer__adress{
+        font-size: 4rem;
     }
     .footer__info {
         flex-direction: rows;

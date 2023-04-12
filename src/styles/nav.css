@@ -89,8 +89,9 @@
 
 .menu__item {
     text-decoration: none;
+    font-family: 'Amatic SC', cursive;;
     color: white;
-    font-size: 4rem;
+    font-size: 2rem;
     cursor: pointer;
     position: relative;
     overflow-x:hidden;
@@ -112,4 +113,10 @@
 }
 .menu__item:hover::after {
     transform: translateX(-100%);
+}
+
+@media (min-width: 768px){
+.menu__item {
+font-size: 4rem;
+}
 }

@@ -1,7 +1,8 @@
-.treatments{
-    z-index:1;
+.treatments {
+    z-index: 1;
 }
-.treatment__wrapper{
+
+.treatment__wrapper {
     width: 100%;
     height: auto;
     display: flex;
@@ -9,8 +10,8 @@
     justify-content: center;
     align-items: center;
     background-color: rgb(53, 47, 47);
-    margin:0;
-    z-index:1;
+    margin: 0;
+    z-index: 1;
     gap: 5rem;
 }
 
@@ -24,26 +25,27 @@
     background-color: rgb(211, 183, 188);
     animation: changeColor 5s ease infinite;
     margin: 0 0 10rem 0;
-    z-index:1;
+    z-index: 1;
 }
+
 .treatments__box {
     width: 100%;
     max-height: 500px;
     display: flex;
     flex-direction: column;
-    overflow:hidden;
+    overflow: hidden;
 }
 
 .treatments__image--wrapper {
     background-color: rgb(211, 183, 188);
     width: 100%;
     cursor: pointer;
-    border-radius: 50px;
     display: flex;
     justify-content: center;
     align-items: center;
     overflow: hidden;
 }
+
 .treatments__image {
     object-fit: cover;
     width: 100%;
@@ -53,25 +55,27 @@
 }
 
 .treatments__image:hover {
-    transform: translate(0,0);
-    opacity:1;
+    transform: translate(0, 0);
+    opacity: 1;
 }
 
 .treatments__title {
     font-size: 2rem;
     color: white;
-    text-shadow:1px 1px 1px black;
+    text-shadow: 1px 1px 1px black;
     position: absolute;
-    z-index:1;
+    z-index: 1;
 }
 
 
 .treatments__text {
-    width: 100%;
+    font-family: 'Amatic SC', cursive;
+    width: 80%;
     height: auto;
-    padding: .5rem 0 ;
+    padding: .5rem 0;
     font-size: 1.5rem;
     text-align: justify;
+    margin: 1rem auto;
     color: white;
     font-size: 1rem;
 }
@@ -93,23 +97,31 @@
 
 
 
-@media (min-width: 758px){
-    .treatments__box{
+@media (min-width: 758px) {
+    .treatments__box {
         width: 80%;
     }
 }
-@media (min-width: 1250px){
-    .treatments__box{
+
+@media (min-width: 1250px) {
+    .treatments__box {
         flex-direction: row;
     }
-    .treatments__text{
+
+    .treatments__text {
         width: 40%;
         padding: 1rem 5rem;
         margin: 0 auto;
         font-size: 1.5rem;
-    
+
     }
+
+    .treatments__image--wrapper {
+        border-radius: 50px;
+    }
+
     .treatments__image {
         max-height: 500px;
-        transform: translate(-20px,-20px);
-    }}
+        transform: translate(-20px, -20px);
+    }
+}
