@@ -48,7 +48,7 @@ const Treatments = [
     <div className ="treatments" name ="treatments"
     onLoad = {scrollUp}>
     <Nav/>
-    <h1 className ="treatments__header">Offerts</h1>
+    <h1 className ="treatments__header">Offert</h1>
     <div className="treatment__wrapper">
       {Treatments.map(item => 
     <div className ="treatments__box">
